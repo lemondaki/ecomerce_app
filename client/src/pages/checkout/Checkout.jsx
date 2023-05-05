@@ -24,7 +24,7 @@ const Checkout = () => {
     setTimeout(() => {
       handleClearCart();
     }, 2000);
-    await axios.post("https://testapp-s8iy.onrender.com//checkout", {
+    await axios.post("https://testapp-s8iy.onrender.com/checkout", {
       amount: total_price + shipping_fee,
       token: token,
     });
