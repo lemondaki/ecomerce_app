@@ -46,7 +46,7 @@ const Sidebar = ({ openSidebar, setOpenSidebar }) => {
         <Link to="/login" className="text-deco" onClick={() => setOpenSidebar(false)}>
           {user ? (
             <button className={cx("auth-btn")} onClick={logOut}>
-              <span>Logout</span>
+              <span className="text-deco">Logout</span>
               <img
                 src={user.photoURL ?? "https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-1024.png"}
                 alt={user.displayName}
