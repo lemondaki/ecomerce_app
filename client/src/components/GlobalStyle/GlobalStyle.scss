@@ -97,7 +97,7 @@ body {
 
 .text-deco {
   text-decoration: none;
-  color: unset;
+  color: var(--text-color)
 }
 
 ::-webkit-input-placeholder {
