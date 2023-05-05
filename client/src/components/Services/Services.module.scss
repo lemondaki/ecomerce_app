@@ -1,0 +1,114 @@
+.wrapper {
+  background-color: var(--clr-primary-10);
+  padding-bottom: 8rem;
+}
+
+.section-center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@mixin styleParagraph($color) {
+  max-width: 58.5rem;
+  padding: 0;
+  margin: 0;
+  line-height: 1.8;
+  color: $color;
+  font-size: 1.6rem;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 8rem 0;
+  h3 {
+    color: #453227;
+    font-size: 3.2rem;
+    text-transform: capitalize;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 0.2rem;
+  }
+  p {
+    @include styleParagraph(#795744);
+  }
+}
+
+.services-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 3rem;
+  margin-top: 2.4rem;
+}
+
+.service {
+  background: var(--clr-primary-7);
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: var(--radius);
+  span {
+    font-size: 3.4rem;
+    width: 6.4rem;
+    height: 6.4rem;
+    display: grid;
+    margin: 0px auto 1rem;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--clr-primary-10);
+    color: var(--clr-primary-1);
+  }
+  h4 {
+    font-size: 2.6rem;
+    color: #453227;
+    text-transform: capitalize;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+  p {
+    @include styleParagraph(var(--clr-primary-3));
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 62em) {
+  .header {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4rem;
+    padding: 10rem 0 5rem;
+    html {
+      font-size: 56.25%;
+    }
+  }
+  .service {
+    p {
+      font-size: 2rem;
+      max-width: 50rem;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 30em) {
+  .header {
+    gap: 0;
+    h3 {
+      line-height: 1.4;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+  .service {
+    p {
+      font-size: 2rem;
+      max-width: 50rem;
+      width: 100%;
+    }
+  }
+  .services-center {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

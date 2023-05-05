@@ -1,0 +1,62 @@
+.container {
+  width: 100%;
+  margin-bottom: 1.6rem;
+  background: var(--clr-black);
+  position: relative;
+  border-radius: var(--radius);
+  img {
+    max-height: 22.5rem;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: var(--radius);
+    transition: var(--transition);
+  }
+  &:hover img {
+    opacity: 0.5;
+  }
+  &:hover .link {
+    display: flex;
+  }
+  .link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #fff;
+    background-color: var(--cart-quantity-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  h5,
+  p {
+    font-size: 1.4rem;
+    font-family: -apple-system, "Open Sans", sans-serif;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+  }
+  p {
+    color:#AB7A5F;
+  }
+}
+
+@media (max-width: 62em) {
+  .description {
+    h5,p {
+      font-size: 1.8rem;
+    }
+  }
+}

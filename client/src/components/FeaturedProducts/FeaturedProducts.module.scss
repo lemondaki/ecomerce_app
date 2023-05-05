@@ -1,0 +1,38 @@
+.section-featured {
+  background-color: var(--clr-grey-10);
+  margin: 0 auto;
+  padding-bottom: 8rem;
+}
+
+.title {
+  h2 {
+    font-size: 4rem;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 8rem 0 6rem 0;
+  }
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-rows: auto;
+  gap: 4rem;
+  margin: 0 auto;
+}
+
+.wrap-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+  .btn-product {
+    padding: 0.75rem 1.25rem;
+  }
+}
+
+@media (max-width: 30em) {
+  .featured {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

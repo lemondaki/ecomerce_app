@@ -1,0 +1,19 @@
+.section-hero {
+  background: var(--clr-primary-10);
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  color: var(--clr-primary-1);
+  h3 {
+    font-size: 3.2rem;
+    margin: 0;
+    text-transform: capitalize;
+  }
+  .title {
+    color: var(--clr-primary-3);
+    padding: 0.5rem;
+    text-decoration: none;
+  }
+}

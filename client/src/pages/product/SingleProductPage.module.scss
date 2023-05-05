@@ -1,0 +1,15 @@
+.wrapper {
+    padding-top: 6rem;
+}
+.product-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding-top: 4rem;
+}
+
+@media(max-width:62em) {
+    .product-center {
+        grid-template-columns: 1fr;
+    }
+}

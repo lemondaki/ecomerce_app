@@ -1,0 +1,33 @@
+.wrapper {
+  min-height: 90vh;
+  .checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    .box-infor {
+      min-width: 300px;
+      h2 {
+        font-size: 2.4rem;
+        font-weight: 600;
+      }
+      p {
+        font-size: 1.6rem;
+      }
+      .name {
+        font-size: 2.4rem;
+        color: #102342;
+      }
+    }
+    .empty {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      min-height: calc(100vh - 16rem);
+      margin-top: 8rem;
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  }
+}

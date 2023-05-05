@@ -1,0 +1,45 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  img {
+    width: 300px;
+    max-height: 200px;
+    border-radius: var(--radius);
+  }
+  h4 {
+    color: #102342;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    margin: 0;
+  }
+  .price {
+    font-size: 1.6rem;
+    color: #b99179;
+    margin: 4px 0;
+  }
+  p {
+    color: #102342;
+    font-size: 1.6rem;
+    margin: 0;
+    margin-bottom: 6px;
+  }
+  .btn-detail {
+    font-size: 1.1rem;
+  }
+}
+
+// 1100px
+@media (max-width: 62em) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 1rem;
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+}

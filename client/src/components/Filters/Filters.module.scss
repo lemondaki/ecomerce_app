@@ -1,0 +1,136 @@
+.wrapper {
+  .clear-btn {
+    font-size: 1.4rem;
+    background-color: #bb2525;
+    text-transform: capitalize;
+  }
+}
+
+.btn-category {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.search-input {
+  display: block;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  background: var(--clr-grey-10);
+  border-radius: var(--radius);
+  border-color: transparent;
+  letter-spacing: var(--spacing);
+  width: 100%;
+  font-size: 1.6rem;
+  &::placeholder {
+    color: #324d67;
+    font-size: 1.4rem;
+  }
+}
+
+.form-control {
+  margin-bottom: 2rem;
+  h5 {
+    font-size: 1.6rem;
+    margin: 1rem 1rem 1rem 0;
+  }
+  p {
+    margin: 0;
+  }
+  .company {
+    background: var(--clr-grey-10);
+    border-radius: var(--radius);
+    border-color: transparent;
+    padding: 4px;
+    border: none;
+    outline: none;
+  }
+  .price {
+    font-size: 1.6rem;
+    color: #324d67;
+  }
+  .shipping {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    label {
+      font-size: 1.6rem;
+    }
+    .btn-check {
+      min-height: 1.2rem;
+      align-self: center;
+      margin: 0;
+      margin-top: 4px;
+    }
+  }
+}
+.form-category {
+  .active {
+    color: #222222;
+  }
+}
+
+.btn-category {
+  display: block;
+  margin: 0.25em 0px;
+  padding: 0.5rem 0px;
+  text-transform: capitalize;
+  background: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid transparent;
+  letter-spacing: 0.2rem;
+  color: var(--clr-grey-5);
+  cursor: pointer;
+}
+
+.colors {
+  display: flex;
+  align-items: center;
+  .all-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #617d98;
+    font-size: 1.4rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .active {
+    color: #222222;
+  }
+  .color-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin: 0 4px;
+    opacity: 0.9;
+    padding: 0;
+    font-size: 0.8rem;
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+}
+
+// 786px for phone
+@media (max-width: 49.125em) {
+  .form-control {
+    .shipping {
+      display: flex;
+      label {
+        margin-right: 42px;
+      }
+    }
+  }
+}

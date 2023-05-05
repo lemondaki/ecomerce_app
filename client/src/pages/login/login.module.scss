@@ -1,0 +1,115 @@
+.wrapper {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .login {
+    width: 400px;
+    height: 420px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    .login__header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+      img {
+        height: 44px;
+      }
+      h2 {
+        font-size: 2.6rem;
+        margin: 0;
+      }
+      .btn-back {
+        visibility: hidden;
+        align-self: flex-start;
+        font-size: 3rem;
+        margin-left: 3rem;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .visible {
+        visibility: visible;
+      }
+    }
+    .wrapper-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+      button {
+        padding: 0.8rem 2rem;
+        width: 100%;
+        max-width: 250px;
+        height: 38px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 30px 1fr;
+        border-radius: 20px;
+        outline: none;
+        margin-top: 2rem;
+        border: 1px solid #ccc;
+        &:hover {
+          cursor: pointer;
+          background-color: #dce0e3;
+        }
+        .btn-icon {
+          font-size: 2rem;
+        }
+        .fb-icon {
+          color: #4267b2;
+        }
+        .user-icon {
+          color: #757575;
+        }
+        p {
+          font-size: 1.6rem;
+          margin: 0;
+        }
+      }
+    }
+    .acc_descp {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      p {
+        font-size: 1.4rem;
+        span {
+          color: #f05123;
+        }
+      }
+    }
+    .wrapper-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+      .form-login {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        button,
+        input {
+          padding: 1rem;
+          margin-bottom: 1rem;
+          border-radius: 4px;
+          outline: none;
+          border: 1px solid #222222;
+        }
+        button {
+          margin: 0;
+          width: 100%;
+          &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+          }
+          color: #fff;
+          font-weight: 600;
+          background-color: #3b71ca;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,213 @@
+.empty {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: calc(100vh - 16rem);
+  margin-top: 8rem;
+  h2 {
+    font-size: 3rem;
+  }
+}
+.wrapper {
+  margin: 8rem 0;
+  hr {
+    margin-top: 6rem;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) repeat(3, 1fr) 20px;
+    span {
+      justify-self: center;
+      font-size: 1.8rem;
+      color: #617d98;
+      text-transform: capitalize;
+    }
+  }
+  .infor-payment {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) repeat(3, 1fr) 20px;
+    justify-items: center;
+    margin-top: 5rem;
+    h5 {
+      display: inline-block;
+    }
+    .product {
+      justify-self: flex-start;
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      img {
+        width: 100px;
+        height: 75px;
+        border-radius: var(--radius);
+        justify-self: flex-start;
+        object-fit: cover;
+      }
+      .infor {
+        .title {
+          font-size: 1.4rem;
+          margin: 0;
+          text-transform: capitalize;
+        }
+        .color {
+          font-size: 1.4rem;
+          color: #617d98;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          p {
+            margin: 0;
+            display: inline-block;
+          }
+          span {
+            display: inline-block;
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 50%;
+            transform: translateY(1px);
+          }
+        }
+      }
+    }
+    .price {
+      display: flex;
+      align-items: center;
+      font-size: 1.6rem;
+      color: var(--cart-quantity-color);
+      p {
+        margin: 0;
+      }
+    }
+    .quantity {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      font-size: 1.6rem;
+      grid-template-columns: repeat(3, 3rem);
+      .btn-icon {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .btn-delete,
+    .subtotal {
+      color: #617d98;
+      font-size: 1.6rem;
+      display: flex;
+      align-items: center;
+      p {
+        margin: 0;
+      }
+    }
+    .btn-delete {
+      span {
+        width: 24px;
+        height: 24px;
+        background-color: #bb2525;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: var(--radius);
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      font-size: 1.4rem;
+      color: #fff;
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    .btn-clear {
+      background-color: #222222;
+      &:hover {
+        background-color: var(--cart-quantity-color);
+      }
+    }
+  }
+  .total-wrapper {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    section {
+      width: 400px;
+      height: 250px;
+      .total-order {
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 2.4rem 4.8rem;
+        h5,
+        p,
+        h4 {
+          margin: 0;
+          text-transform: capitalize;
+          display: grid;
+          grid-template-columns: 200px 1fr;
+        }
+        h5 {
+          font-size: 1.6rem;
+          color: #102a42;
+          margin-bottom: 1.2rem;
+        }
+        p {
+          font-size: 1.6rem;
+          color: var(--text-color);
+          margin-bottom: 2rem;
+          padding-bottom: 4rem;
+          border-bottom: 1px solid #ccc;
+        }
+        h4 {
+          font-size: 2.4rem;
+          margin: 3.2rem 0 1.2rem;
+        }
+      }
+      .btn-checkout {
+        width: 100%;
+        margin-top: 1.6rem;
+        padding: 1rem 4.8rem;
+        display: flex;
+        justify-content: center;
+        font-size: 1.7rem;
+        font-weight: 600;
+      }
+      .text-deco {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 37.5em) {
+  .wrapper {
+    .content {
+      display: grid;
+      grid-template-columns: 3fr 1fr 50px;
+      .price,
+      .subtotal {
+        display: none;
+      }
+      .item {
+        justify-self: flex-start;
+      }
+    }
+    .infor-payment {
+      grid-template-columns: 3fr 1fr 50px;
+      gap: 10px;
+      .price,
+      .subtotal {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 50em) {
+  .wrapper {
+    .total-wrapper {
+      justify-content: center;
+    }
+  }
+}
