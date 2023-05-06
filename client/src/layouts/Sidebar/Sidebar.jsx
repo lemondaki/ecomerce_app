@@ -44,7 +44,7 @@ const Sidebar = ({ openSidebar, setOpenSidebar }) => {
           <CartButton />
         </Link>
         <Link to="/login" className="text-deco" onClick={() => setOpenSidebar(false)}>
-          <div className={cx('wrapper-user')}>
+          <div className={cx("wrapper-user")}>
             {user ? (
               <button className={cx("auth-btn")} onClick={logOut}>
                 <span className="text-deco">Logout</span>
@@ -54,7 +54,7 @@ const Sidebar = ({ openSidebar, setOpenSidebar }) => {
                 />
               </button>
             ) : (
-              <button className={cx("auth-btn")}>
+              <button className={cx("auth-btn", "text-deco")}>
                 <span>Login</span>
                 <FaUserPlus />
               </button>
