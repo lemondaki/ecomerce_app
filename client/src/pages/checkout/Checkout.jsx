@@ -12,7 +12,6 @@ const cx = classNames.bind(style);
 const Checkout = () => {
   const { user } = UserAuth();
   const { cart, shipping_fee, total_price, clearShoppingCart } = useCartContext();
-  const [pay, setPay] = useState(false);
   const naviagate = useNavigate();
 
   const handleClearCart = () => {

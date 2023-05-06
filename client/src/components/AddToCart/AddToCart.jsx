@@ -1,6 +1,5 @@
 import React from "react";
 import { FaPlus, FaMinus, FaCheck } from "react-icons/fa";
-import { useState } from "react";
 import classNames from "classnames/bind";
 import styles from "./AddToCart.module.scss";
 const cx = classNames.bind(styles);

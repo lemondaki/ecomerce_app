@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import heroBcg from "../../assets/hero-bcg.jpeg";
 import heroBcg2 from "../../assets/hero-bcg-2.jpeg";
 import styles from "./Hero.module.scss";

@@ -1,9 +1,8 @@
 import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import styles from "./CartButton.module.scss";
 import classNames from "classnames/bind";
-import { useCartContext } from "../../../context/CartContext";
+import { useCartContext } from "../../context/CartContext";
 const cx = classNames.bind(styles);
 const CartButton = () => {
   const { total_item } = useCartContext();

@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames/bind";
 import styles from "./SingleProductDescp.module.scss";
-import AddToCart from "../../features/AddToCart/AddToCart";
+import AddToCart from "../../components/AddToCart/AddToCart";
 import { useCartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -59,7 +59,7 @@ const SingleProductDescp = ({ singleProduct }) => {
         <Link
           to="/cart"
           className={cx("btn", "btn-add-cart")}
-          onClick={() => addToCart(sku,mainColor,amount,singleProduct)}
+          onClick={() => addToCart(sku, mainColor, amount, singleProduct)}
         >
           add to cart
         </Link>

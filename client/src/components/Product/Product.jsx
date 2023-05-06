@@ -5,7 +5,7 @@ import styles from "./Product.module.scss";
 import classNames from "classnames/bind";
 import formatPrice from "../../helper/formatPrice";
 const cx = classNames.bind(styles);
-const Product = ({ id, name, price, image, colors, company, styleProductsList }) => {
+const Product = ({ id, name, price, image, styleProductsList }) => {
   return (
     <div>
       <div className={cx("container")}>

@@ -5,7 +5,7 @@ import { links } from "../../utils/constants";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import { FaTimes, FaUserPlus } from "react-icons/fa";
-import CartButton from "../../view/cart/CartButton/CartButton";
+import CartButton from "../../components/CartButton/CartButton";
 import { UserAuth } from "../../context/AuthContext";
 const cx = classNames.bind(styles);
 const Sidebar = ({ openSidebar, setOpenSidebar }) => {
@@ -44,20 +44,22 @@ const Sidebar = ({ openSidebar, setOpenSidebar }) => {
           <CartButton />
         </Link>
         <Link to="/login" className="text-deco" onClick={() => setOpenSidebar(false)}>
-          {user ? (
-            <button className={cx("auth-btn")} onClick={logOut}>
-              <span className="text-deco">Logout</span>
-              <img
-                src={user.photoURL ?? "https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-1024.png"}
-                alt={user.displayName}
-              />
-            </button>
-          ) : (
-            <button className={cx("auth-btn")}>
-              <span>Login</span>
-              <FaUserPlus />
-            </button>
-          )}
+          <div className={cx('wrapper-user')}>
+            {user ? (
+              <button className={cx("auth-btn")} onClick={logOut}>
+                <span className="text-deco">Logout</span>
+                <img
+                  src={user.photoURL ?? "https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-1024.png"}
+                  alt={user.displayName}
+                />
+              </button>
+            ) : (
+              <button className={cx("auth-btn")}>
+                <span>Login</span>
+                <FaUserPlus />
+              </button>
+            )}
+          </div>
         </Link>
       </div>
     </div>

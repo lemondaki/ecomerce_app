@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./PageHero.module.scss";
 import classNames from "classnames/bind";
 import { Link } from "react-router-dom";
-import { FaBars, FaUserPlus } from "react-icons/fa";
 const cx = classNames.bind(styles);
 const PageHero = ({ title, singleProduct }) => {
   return (

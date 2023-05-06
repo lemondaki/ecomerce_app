@@ -64,6 +64,7 @@
 .cart-wrapper {
   margin-top: 4rem;
   display: flex;
+  align-items: center;
   justify-content: center;
   .auth-btn {
     border: none;
@@ -90,6 +91,10 @@
     width: 26px;
     height: 26px;
     border-radius: 50%;
+  }
+  .wrapper-user {
+    display: flex;
+    align-items: center;
   }
 }
 
